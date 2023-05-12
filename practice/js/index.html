@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js practice</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 以下はsplide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <!--  -->
+</head>
+<body>
+<header>
+    <h1>Awesome View</h1>
+</header>
+<!-- splideのコード -->
+<div class="splide" role="group">
+    <div class="splide__arrows">
+      <button class="splide__arrow splide__arrow--prev"></button>
+      <button class="splide__arrow splide__arrow--next"></button>
+    </div>
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide"><img src="img/img-1.jpg" alt=""></li>
+        <li class="splide__slide"><img src="img/img-2.jpg" alt=""></li>
+        <li class="splide__slide"><img src="img/img-3.jpg" alt=""></li>
+        <li class="splide__slide"><img src="img/img-4.jpg" alt=""></li>
+        <li class="splide__slide"><img src="img/img-5.jpg" alt=""></li>
+      </ul>
+    </div>
+    <ul class="splide__pagination"></ul>
+  </div>
+
+<!-- アコーディオンUI  -->
+<section >
+    <div class="accordion">
+        <p class="menu js-menu">menu1</p>
+        <div class="contents">contents1</div>
+        <p class="menu js-menu">menu2</p>
+        <div class="contents">contents2</div>
+        <p class="menu js-menu">menu3</p>
+        <div class="contents">contents3</div>
+    </div>
+</section>
+
+<!-- tab menu -->
+<div class="tab-menu">
+  <button onclick="changeTab(0)">Tab1</button>
+  <button onclick="changeTab(1)">Tab2</button>
+  <button onclick="changeTab(2)">Tab3</button>
+</div>
+
+<div class="tab-content">
+  <div class="tab" id="tab1">
+    <h2>Tab1 Content</h2>
+    <p>This is the content of Tab1.</p>
+  </div> 
+  <div class="tab" id="tab2">
+    <h2>Tab1 Content</h2>
+    <p>This is the content of Tab1.</p>
+  </div> 
+  <div class="tab" id="tab3">
+    <h2>Tab1 Content</h2>
+    <p>This is the content of Tab1.</p>
+  </div> 
+</div>
+
+
+
+
+
+<!-- splideのscript -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>  
+    <script src="js/splide.js"></script>
+
+<!-- accordion UI -->
+    <script src="js/accordion.js"></script>
+
+<!-- tab content -->
+<script src="js/tabcontent.js"></script>
+</body>
+</html>
